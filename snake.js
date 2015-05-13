@@ -117,6 +117,9 @@ function tick() {
 	ctx.fillStyle = "white";
 	ctx.font = "20px monospace";
 	ctx.fillText("Snake Pong", 10, 20);
+
+	ctx.font = "12px Arial";
+	ctx.fillText("By @ m w s h e l l i e", 10, canvas.height - 5);
 }
 
 setInterval(tick, tickspeed);
