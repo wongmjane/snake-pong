@@ -31,7 +31,7 @@ var snakeBody = [];
 var foodLocation = randomCoor();
 
 var foodMovement = {
-	x: +1, 
+	x: +1,
 	y: +1
 };
 
@@ -62,13 +62,13 @@ function tick() {
 
 	if(snakeBody[snakeBody.length - 1].x < 0)
 		snakeBody[snakeBody.length - 1].x = gridWidth - 1;
-	
+
 	if (snakeBody[snakeBody.length - 1].x > gridWidth)
 		snakeBody[snakeBody.length - 1].x = 0;
 
 	if(snakeBody[snakeBody.length - 1].y < 0)
 		snakeBody[snakeBody.length - 1].y = gridHeight - 1;
-	
+
 	if(snakeBody[snakeBody.length - 1].y > gridHeight)
 		snakeBody[snakeBody.length - 1].y = 0;
 
@@ -113,13 +113,13 @@ function tick() {
 		foodLocation.x += foodMovement.x;
 		foodLocation.y += foodMovement.y;
 	}
-	
+
 	ctx.fillStyle = "white";
 	ctx.font = "20px monospace";
 	ctx.fillText("Snake Pong", 10, 20);
 
 	ctx.font = "12px Arial";
-	ctx.fillText("By @ m w s h e l l i e", 10, canvas.height - 5);
+	ctx.fillText("By @ w o n g m j a n e", 10, canvas.height - 5);
 }
 
 setInterval(tick, tickspeed);
